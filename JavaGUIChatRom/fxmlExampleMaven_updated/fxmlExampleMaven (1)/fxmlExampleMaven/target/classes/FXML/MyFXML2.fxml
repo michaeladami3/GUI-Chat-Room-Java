@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane fx:id="root2" maxHeight="455.0" maxWidth="400.0" styleClass="border" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyController">
+   <center>
+      <Pane maxHeight="500.0" maxWidth="450.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="398.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="listViewServer" layoutX="50.0" layoutY="25.0" prefHeight="341.0" prefWidth="279.0" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

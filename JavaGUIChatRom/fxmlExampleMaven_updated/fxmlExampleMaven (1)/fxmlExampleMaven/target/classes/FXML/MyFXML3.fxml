@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane fx:id="root3" maxHeight="600.0" maxWidth="500.0" styleClass="border" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyController">
+   <center>
+      <Pane prefHeight="400.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="208.0" prefWidth="500.0">
+               <children>
+                  <TextField fx:id="textField2" layoutX="29.0" layoutY="131.0" onKeyPressed="#handle2" prefHeight="25.0" prefWidth="367.0" />
+                  <TextField fx:id="textField" layoutX="29.0" layoutY="33.0" onKeyPressed="#handle1" prefHeight="25.0" prefWidth="365.0" />
+                  <TextField fx:id="textField1" layoutX="29.0" layoutY="79.0" onKeyPressed="#handle3" prefHeight="25.0" prefWidth="366.0" />
+                  <Button layoutX="29.0" layoutY="169.0" mnemonicParsing="false" onAction="#sendButton" text="Send" />
+                  <Label layoutX="29.0" layoutY="14.0" text="Enter a Message:" />
+                  <Label layoutX="29.0" layoutY="58.0" prefHeight="17.0" prefWidth="424.0" text="Client:  (i.e. 1 to client 1 or 1,2,3,4 to send to clients 1,2,3,4 or 0 for all)" />
+                  <Label layoutX="27.0" layoutY="114.0" prefHeight="17.0" prefWidth="103.0" text="Enter Option:" />
+                  <Label layoutX="185.0" layoutY="181.0" text="Directions:" />
+               </children>
+            </Pane>
+            <Pane layoutY="208.0" prefHeight="360.0" prefWidth="500.0">
+               <children>
+                  <TextArea layoutX="193.0" layoutY="-11.0" prefHeight="202.0" prefWidth="309.0" text="NOTE: PRESS &quot;ENTER&quot; TO CONFIRM YOUR SELECTION.&#10;Client:&#10;-To message one person-Enter client #&#10;-To send a group message- Enter client numbers &#10;        seperated with commas&#10;-To send message to everyone- Enter &quot;0&quot;&#10;&#10;Option:&#10;To send message to one person-Enter &quot;1&quot;&#10;To send message to group- Enter &quot;2&quot;&#10;To send message to everyone- Enter &quot;3&quot;&#10;&#10;&#10;" />
+                  <ListView fx:id="listViewClients" layoutY="-11.0" prefHeight="203.0" prefWidth="192.0" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
